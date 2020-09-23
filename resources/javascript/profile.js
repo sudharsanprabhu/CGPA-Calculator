@@ -1,0 +1,57 @@
+switch(localStorage._usr)
+{
+  case "2017107001": document.getElementById("user_name").value="Agilan TR";break;
+  case "2017107002": document.getElementById("user_name").value="Aishwarya R";break;
+  case "2017107003": document.getElementById("user_name").value="Ajay P";break;
+  case "2017107004": document.getElementById("user_name").value="Ajay V";break;
+  case "2017107005": document.getElementById("user_name").value="Ajith A";break;
+  case "2017107006": document.getElementById("user_name").value="Anusya S";break;
+  case "2017107007": document.getElementById("user_name").value="Aravind M";break;
+  case "2017107008": document.getElementById("user_name").value="Balamurugan S";break;
+  case "2017107009": document.getElementById("user_name").value="Bhupathi K";break;
+  case "2017107010": document.getElementById("user_name").value="Charukeshan L";break;
+  case "2017107012": document.getElementById("user_name").value="Dhanasekar A";break;
+  case "2017107013": document.getElementById("user_name").value="Dhanasekaran K";break;
+  case "2017107014": document.getElementById("user_name").value="Dhayanandhan M";break;
+  case "2017107016": document.getElementById("user_name").value="Durgha K";break;
+  case "2017107017": document.getElementById("user_name").value="Esther Jesintha Nallathambi";break;
+  case "2017107018": document.getElementById("user_name").value="Febronia E";break;
+  case "2017107019": document.getElementById("user_name").value="Geetha Lakshmi B";break;
+  case "2017107020": document.getElementById("user_name").value="Giri Sakthi A";break;
+  case "2017107022": document.getElementById("user_name").value="Haritha R";break;
+  case "2017107023": document.getElementById("user_name").value="Harshavarthini M";break;
+  case "2017107024": document.getElementById("user_name").value="Hephzibah C";break;
+  case "2017107026": document.getElementById("user_name").value="Jedidah Singh Rhoda";break;
+  case "2017107027": document.getElementById("user_name").value="Jeeva N";break;
+  case "2017107028": document.getElementById("user_name").value="Kalaiselvi I";break;
+  case "2017107029": document.getElementById("user_name").value="Kalaivani B";break;
+  case "2017107030": document.getElementById("user_name").value="Kamali A";break;
+  case "2017107031": document.getElementById("user_name").value="Kavibharathi R";break;
+  case "2017107032": document.getElementById("user_name").value="Kavichelvan G K";break;
+  case "2017107033": document.getElementById("user_name").value="Kayalvizhi K";break;
+  case "2017107034": document.getElementById("user_name").value="Kishore E";break;
+  case "2017107035": document.getElementById("user_name").value="Kowshika K";break;
+  case "2017107036": document.getElementById("user_name").value="Mathimenaka R";break;
+  case "2017107038": document.getElementById("user_name").value="Mukil M";break;
+  case "2017107040": document.getElementById("user_name").value="Pavithrra S";break;
+  case "2017107041": document.getElementById("user_name").value="Priya S";break;
+  case "2017107043": document.getElementById("user_name").value="Ramjayakumar V";break;
+  case "2017107045": document.getElementById("user_name").value="Rinushika R";break;
+  case "2017107046": document.getElementById("user_name").value="Rithik Akash M";break;
+  case "2017107047": document.getElementById("user_name").value="Sabeena M";break;
+  case "2017107048": document.getElementById("user_name").value="Sandhya R";break;
+  case "2017107049": document.getElementById("user_name").value="Sargunavelan K";break;
+  case "2017107050": document.getElementById("user_name").value="Shahintaj J";break;
+  case "2017107051": document.getElementById("user_name").value="Sudharsan Prabhu S R";break;
+  case "2017107052": document.getElementById("user_name").value="Vasudevan D";break;
+  case "2017107053": document.getElementById("user_name").value="Venkateswaran S";break;
+  case "2017107054": document.getElementById("user_name").value="Yuvetha E";break;
+  case "2017107055": document.getElementById("user_name").value="Arthi K";break;
+  case "2017107056": document.getElementById("user_name").value="Pooja G";break;
+  case "2017107057": document.getElementById("user_name").value="Tuhi Saumya";break;
+  case "2017107058": document.getElementById("user_name").value="Darsana L Raj";break;
+  case "2017107060": document.getElementById("user_name").value="Abranth Srivatsav D";break;
+} 
+
+document.getElementById("reg_num").value="Register No:  "+localStorage._usr;
+document.getElementById("semester_num").value="Semester: 3";

@@ -1,0 +1,98 @@
+body{
+	background-image:url("images/contact_us_bg.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#contactus{
+	position:absolute;
+	z-index:1;
+	top:50%;
+	left:10%;
+	transform:translate(-10%,-50%);
+	padding:3% 10% 3% 5%;
+	background:rgba(0,0,0,.8);
+	color:white;
+	border-radius:5px;
+	height:180px;
+}
+
+#contactus ul{
+	list-style-type:square;
+	background:none;
+}
+
+
+#contactus li{
+    background:none;
+	float:none;	
+}
+
+
+
+#feedback_form{
+	position:absolute;
+	z-index:1;
+	top:50%;
+	right:10%;
+	transform:translate(10%,-50%);
+	padding:40px 50px 40px 40px;
+	background:rgba(0,0,0,.8);
+	color:white;
+	border-radius:5px;
+    width:25%;
+}	
+
+#feedback_form input[type=text]{
+	background:none;
+	outline:none;
+	border:none;
+	border-bottom:1px solid grey;
+	color:white;
+	padding:8px;
+	width:100%;
+	border-radius:10px;
+	transition:.5s;
+    font-size:16px;
+}
+
+
+#feedback_form textarea{
+	background:none;
+	outline:none;
+	border:2px solid grey;
+	color:white;
+	padding:8px;
+	width:100%;
+	border-radius:10px;
+	transition:.5s;
+    font-size:16px;
+}
+
+#feedback_form input[type=submit]{
+  padding:10px 20px;
+  color:white;
+  outline:none;
+  border:none;
+  background:green;
+  border-radius:5px;
+  
+}
+
+#feedback_form input::placeholder,
+#feedback_form textarea::placeholder{
+	color:white;
+}
+
+#feedback_form input:focus,
+#feedback_form input:hover{
+	border-bottom:1px solid #03a9f4;
+}
+
+#feedback_form textarea:hover,
+#feedback_form textarea:focus{
+	border:2px solid #03a9f4;
+}
+	
+
+

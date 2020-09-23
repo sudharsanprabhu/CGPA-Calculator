@@ -1,0 +1,92 @@
+.sidenav{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	right: 20px;
+	background-color:rgba(5,5,5,.5);
+	position: absolute;
+	Z-index: 1;
+	width: 20%;
+	overflow: hidden;
+	height: 80%;
+	border-radius: 10px;
+	border:2px solid #03a9f4;
+}
+
+	
+
+.sidenav #profile{
+	top:30px;
+	left:10px;
+	right:10px;
+	position:absolute;
+}
+
+.sidenav #profile input{
+	background:none;
+	outline:none;
+	color:white;
+	width:95%;
+	font-size:18px;
+	position:absolute;
+	border:2px solid grey;
+	padding:8px 0 8px 8px;
+	cursor:pointer;
+	transition:.5s;
+	border-radius:5px;
+	border-left:2px solid rgb(115,251,251);
+	border-right:2px solid rgb(115,251,251);
+}
+
+.sidenav #profile #user_name:hover{
+	border:2px solid #03a9f4;
+}
+
+.sidenav #profile #reg_num:hover{
+   border:2px solid rgb(201,98,95);
+}
+
+.sidenav #profile #semester_num:hover{
+	border: 2px solid rgb(71,146,69);
+}
+
+
+.sidenav #options{
+	position:absolute;
+	top:50%;
+	left:10px;
+	right:10px;
+}
+
+.sidenav #options button{
+	width:100%;
+	background:none;
+	color:#aeaeae;
+	font-size:18px;
+	padding:8px;
+	cursor:pointer;
+	transition:.5s;
+	border:2px solid grey;
+	border-left:2px solid rgb(115,251,251);
+	border-right:2px solid rgb(115,251,251);
+    border-radius:3px;
+}
+
+.sidenav #options #load_button:hover{
+	border:2px solid #03a9f4;
+	color:white;
+}
+
+.sidenav #options #delete_button:hover{
+	border:2px solid red;
+	color:white;
+}
+
+.sidenav #options #change_password_button:hover{
+	border:2px solid orange;
+	color:white;
+}
+
+.sidenav #options #logout_button:hover{
+	border:2px solid green;
+	color:white;
+}

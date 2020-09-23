@@ -1,0 +1,428 @@
+body { 
+  background: url(images/gpa_bg.jpg) no-repeat fixed;
+  background-size:cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size:120%;
+  }
+   
+  
+.body_box {
+    position: absolute;
+	width:81%;
+	height:100%;
+	top:130px;
+	left:20px;
+	z-index:-1;
+}	
+
+@media screen and (max-height: 1000px){
+	.body_box{
+		height:120%;
+		font-size:110%;
+	}
+}
+
+
+@media screen and (max-height: 800px){
+	.body_box{
+		height:140%;
+		font-size:100%;
+	}
+}
+
+@media screen and (max-height: 650px){
+	.body_box{
+		height:180%;
+		font-size:100%;
+	}
+}
+
+@media screen and (max-height: 550px){
+	.body_box{
+		height:220%;
+		font-size:100%;
+	}
+}
+
+.click_sem_box {
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	z-index: 1;
+	cursor: pointer;
+	transition: 1s;
+	padding: 10px;
+	border-bottom: 2px solid white;
+	border-radius: 10px;
+	color: #818181;
+}
+
+
+.list_semesters_box {
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	transition: 3s;
+	z-index: 1;
+	top: 180px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #818181;
+}
+
+.list_semesters_box div {
+padding: 5px;
+border-left: 5px solid grey;
+cursor: pointer;
+}	
+
+.page1 div:hover{
+	color: #f1f1f1;
+	border-bottom: 2px solid #b23636;
+	
+}
+
+#sem1,#sem2,#sem3,#sem4,#sem5,#sem6,#sem7,#sem8 {
+	
+	height: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+	position: absolute;
+	transition: 2s;
+    overflow: hidden;
+	background: none;
+	border-radius: 10px;
+}
+
+select{
+	margin-top: 20px;
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-size:100%;
+	width:100%;
+	cursor: pointer;
+
+}
+
+select:hover{
+	border-bottom: 5px solid red;
+	transition: .3s;
+}
+
+.body_box #button_box{
+	position: absolute;
+	top: -100%;
+	transition: 1s;
+	padding: 20px;
+	z-index:1;
+}
+	
+.body_box #button_box .gpa_button{
+	padding: 10px;
+	border: none;
+	outline: none;
+	background: #03a9f4;
+	color: white;
+	cursor: pointer;
+	height: 50px;
+    font-size: 20px;
+	width: auto;
+}
+
+
+.body_box #button_box .gpa_button:hover{
+	border-bottom: 5px solid red;
+	border-radius: 8px;
+	transition: .3s;
+}
+
+
+.body_box #button_box .cancel_button{
+	padding: 10px 58px;
+	border: none;
+	outline: none;
+	background: red;
+	color: white;
+	cursor: pointer;
+	height: 50px;
+    font-size: 20px;
+}
+
+.body_box #button_box .cancel_button:hover{
+	border-bottom: 5px solid #03a9f4;
+	border-radius: 8px;
+	transition: .3s;
+}
+
+#show_result .save_button{
+	padding: 10px 20px 10px 20px;
+	width: 80%;
+	border: 1px solid #03a9f4;
+	border-radius: 3px;
+	background: none;
+	color: white;
+	cursor: pointer;
+	font-size: 25px;
+	transition: .5s;
+}
+
+#show_result .save_button:hover{
+	border-radius: 10px;
+	border: 2px solid rgb(84,254,254);
+}
+
+
+.body_box #show_result{
+	height: 0;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	position: absolute;
+	transition: 1s;
+    overflow: hidden;
+	background: rgb(0,0,0);
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	left: 50%;
+}
+
+.body_box #show_result #close_result_box{
+	top: 10px;
+	right: 30px;
+	position: absolute;
+	padding: 0px 30px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.body_box #show_result #close_result_box:hover{
+	color: red;
+	background: white;
+}
+
+
+
+.body_box #message_box{
+	height: 0;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	position: absolute;
+	transition: 1s;
+    overflow: hidden;
+	background:rgba(0,0,0,.8);
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	left: 50%;
+}
+
+.body_box #message_box #show_message{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+}
+
+.body_box #message_box #close_message_box{
+	top: 10px;
+	right: 30px;
+	position: absolute;
+	padding: 0px 30px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.body_box #message_box #close_message_box:hover{
+	color: red;
+	background: white;
+}
+
+
+.body_box #delete_message_box{
+	height: 0;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	position: absolute;
+	transition: 1s;
+    overflow: hidden;
+	background: rgba(0,0,0,.8);
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	left: 50%;
+}
+
+.body_box #delete_message_box #show_delete_message{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+}
+
+.body_box #delete_message_box #close_delete_message_box{
+	top: 10px;
+	right: 30px;
+	position: absolute;
+	padding: 0px 30px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.body_box #delete_message_box #close_delete_message_box:hover{
+	color: red;
+	background: white;
+}
+
+
+.body_box #delete_message_box #show_delete_message #yes
+{
+	border:none;
+	outline:none;
+	padding:5px 20px;
+	font-size:20px;
+	background-color: green;
+	width: 100px;
+	cursor:pointer;
+	color:white;
+}
+
+.body_box #delete_message_box #show_delete_message #no
+{
+	border:none;
+	outline:none;
+	padding:5px 20px;
+	font-size:20px;
+	background-color: red;
+	width: 100px;
+	cursor:pointer;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.body_box #pwd_box{
+	height: 0;
+	width: 80%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	position: absolute;
+	transition: 1s;
+    overflow: hidden;
+	background: rgba(0,0,0,.9);
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	left: 50%;
+}
+
+.body_box #pwd_box #pwd{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	
+}
+
+.body_box #pwd_box #pwd_query{
+   position: absolute;
+   bottom: 20px;
+   color: green;
+   font-size: 22px;   
+}	
+
+.body_box #pwd_box #close_pwd_box{
+	top: 10px;
+	right: 30px;
+	position: absolute;
+	padding: 0px 30px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.body_box #pwd_box #close_pwd_box:hover{
+	color: red;
+	background: white;
+}
+
+
+
+
+.body_box #pwd_box #pwd .inputbox{
+position: relative;
+}
+
+.body_box #pwd_box #pwd .inputbox input{
+width: 100%;
+padding: 10px 5px;
+color: #fff;
+font-size: 16px;
+margin-bottom: 15px;
+border: none;
+border-bottom: 1px solid rgb(84,254,254);
+outline:none;
+background:transparent;
+letter-spacing: 2px;
+}
+
+
+.body_box #pwd_box #pwd .inputbox label{
+position: absolute;
+top: 0;
+left:0;
+padding: 10px 0;
+color: #fff;
+font-size: 20px;
+pointer-events: none;
+transition: .5s;
+
+}
+
+.body_box #pwd_box #pwd .inputbox input:focus ~ label,
+.body_box #pwd_box #pwd .inputbox input:valid ~ label
+{
+top: -18px;
+left:0;
+color: #03a9f4;
+font-size: 14px;
+}
+
+.body_box #pwd_box #pwd input[type="submit"]
+{
+    padding: 20px;
+	width: 100%;
+	border: 1px solid #03a9f4;
+	border-radius: 5px;
+	background: none;
+	color: white;
+	cursor: pointer;
+	transition: .5s;
+	font-size: 18px;
+}

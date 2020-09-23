@@ -1,0 +1,85 @@
+.bgbox .forgot_pwd{
+width: 0;
+height: 100%;
+z-index: 3;
+position: absolute;
+overflow:hidden;
+transition: .6s;
+background: rgb(0,0,0);
+top: 0;
+right: 0;
+white-space: nowrap;
+}
+
+
+.bgbox .forgot_pwd h2{
+margin: 20px 0 25px 0;
+padding: 0;
+text-align: center;
+color: #fff;
+}
+
+.bgbox .forgot_pwd .inputbox{
+position: relative;
+}
+
+.bgbox .forgot_pwd .inputbox input{
+width: 85%;
+padding: 10px 5px;
+color: #fff;
+font-size: 16px;
+margin-bottom: 20px;
+margin-left: 20px;
+border: none;
+border-bottom: 1px solid #fff;
+outline:none;
+background:transparent;
+}
+
+
+.bgbox .forgot_pwd .inputbox label{
+position: absolute;
+top: 0;
+left:0;
+margin-left: 20px;
+padding: 10px 0;
+color: #fff;
+font-size: 16px;
+pointer-events: none;
+transition: .5s;
+}
+
+.bgbox .forgot_pwd .inputbox input:focus ~ label,
+.bgbox .forgot_pwd .inputbox input:valid ~ label
+{
+top: -18px;
+left:0;
+color: #03a9f4;
+font-size: 12px;
+}
+
+.bgbox .forgot_pwd input[type="submit"]
+{
+ border: none;
+ outline: none;
+ margin-left: 20px;
+ background: green;
+ color: white;
+ padding: 10px 20px;
+ cursor:pointer;
+ border-radius: 5px;
+
+}
+
+.bgbox .forgot_pwd input[type="button"]
+{
+ border: none;
+ outline: none;
+ margin-right: 20px;
+ background: red;
+ color: white;
+ padding: 10px 20px;
+ cursor:pointer;
+ border-radius: 5px;
+ float: right;
+}
